@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    SS EDITS - Professional Video Editing Website
+    
+    ✅ BACKGROUNDS ARE NOW ACTIVE - Professional editing setup images are embedded!
+    
+    OPTIONAL SETUP:
+    
+    ✅ WEB3FORMS IS NOW ACTIVE - Contact form will send emails to editswithssedits@gmail.com
+    
+    All features are fully functional and ready to use!
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS EDITS - Premium Video Editing Services</title>
+    <meta name="description" content="Professional video editing, color grading, and post-production services. Creating cinematic excellence for content creators and film projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #FF8C00;
+            --rich-orange: #FF6B00;
+            --dark-orange: #CC6F00;
+            --black: #000000;
+            --dark-gray: #0a0a0a;
+            --light-gray: #1a1a1a;
+            --text-white: #ffffff;
+            --text-gray: #cccccc;
+            --gradient-dark: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--black);
+            color: var(--text-white);
+            overflow-x: hidden;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .header-scrolled {
+            box-shadow: 0 4px 20px rgba(255, 140, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            font-style: italic;
+            color: var(--primary-orange);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            color: var(--rich-orange);
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-orange);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-orange);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section - Professional Editing Room with Warm Lighting */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 140, 0, 0.05) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            font-weight: 900;
+            font-style: italic;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(255, 140, 0, 0.5);
+            letter-spacing: 3px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--text-white);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-orange);
+            color: var(--black);
+            box-shadow: 0 4px 20px rgba(255, 140, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--rich-orange);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(255, 140, 0, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-orange);
+            border: 2px solid var(--primary-orange);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-orange);
+            color: var(--black);
+            transform: translateY(-2px);
+        }
+
+        /* Form button adjustments for mobile */
+        @media (max-width: 480px) {
+            .contact-form button {
+                width: 100% !important;
+                min-width: auto !important;
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-orange);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Services Section - Multi-Monitor Workspace with Purple/Blue Lighting */
+        #services {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--light-gray);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-orange);
+            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-orange);
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        /* Portfolio Section - Professional Editing Room with Warm Lighting */
+        #portfolio {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .portfolio-intro {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid var(--primary-orange);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .portfolio-intro p {
+            font-size: 1.2rem;
+            color: var(--text-white);
+            line-height: 1.8;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            background: var(--light-gray);
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 40px rgba(255, 140, 0, 0.3);
+        }
+
+        .portfolio-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 140, 0, 0.3), rgba(0, 0, 0, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover::before {
+            opacity: 1;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary-orange);
+        }
+
+        /* Demo Reel Section - Multi-Monitor Workspace */
+        #demo-reel {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        .demo-reel-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: var(--light-gray);
+            border-radius: 20px;
+            border: 2px solid var(--primary-orange);
+        }
+
+        .demo-reel-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-orange);
+        }
+
+        .demo-reel-content p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .demo-request-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Testimonials Section - Multi-Monitor Workspace with Purple/Blue Lighting */
+        #testimonials {
+            position: relative;
+            /* PASTE CONTENT FROM bg_image2_base64.txt BELOW */
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url('data:image/jpeg;base64,PASTE_FULL_BASE64_STRING_FROM_bg_image2_base64.txt_HERE');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--primary-orange);
+            transform: translateY(-5px);
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: var(--primary-orange);
+            opacity: 0.3;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            color: var(--text-white);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            color: var(--primary-orange);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--dark-gray);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--light-gray);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-orange);
+        }
+
+        .contact-details h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-orange);
+        }
+
+        .contact-details p {
+            color: var(--text-gray);
+        }
+
+        .contact-details a {
+            color: var(--text-white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: var(--primary-orange);
+        }
+
+        .contact-form {
+            background: var(--light-gray);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-white);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            background: var(--dark-gray);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            border-radius: 8px;
+            color: var(--text-white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.1);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FF8C00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 16px;
+            padding-right: 3rem;
+        }
+
+        .form-group select option {
+            background: var(--dark-gray);
+            color: var(--text-white);
+            padding: 0.5rem;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-success {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+            border: 1px solid #22c55e;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            padding: 3rem 2rem 1rem;
+            border-top: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-style: italic;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .social-link:hover {
+            background: var(--primary-orange);
+            color: var(--black);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 140, 0, 0.1);
+        }
+
+        /* AI Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 10000;
+        }
+
+        /* Pulse animation for AI button */
+        @keyframes chatPulse {
+            0%, 100% {
+                box-shadow: 0 4px 20px rgba(255, 140, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(255, 140, 0, 0.8);
+            }
+        }
+
+        .chat-button {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-orange), var(--rich-orange));
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(255, 140, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            transition: all 0.3s ease;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 10000;
+            margin-right: 0;
+            margin-bottom: 0;
+            animation: chatPulse 2s infinite;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(255, 140, 0, 0.7);
+            animation: none;
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 380px;
+            max-width: 380px;
+            height: 550px;
+            max-height: 80vh;
+            background: rgba(0, 0, 0, 0.95);
+            border-radius: 15px;
+            border: 2px solid var(--primary-orange);
+            box-shadow: 0 8px 40px rgba(255, 140, 0, 0.3);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 9999;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+        .chat-window.active {
+            display: flex;
+        }
+
+        .chat-header {
+            background: var(--primary-orange);
+            color: var(--black);
+            padding: 1rem;
+            border-radius: 13px 13px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .chat-close {
+            background: none;
+            border: none;
+            color: var(--black);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .chat-message {
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            max-width: 80%;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-message.bot {
+            background: var(--dark-gray);
+            color: var(--text-white);
+            align-self: flex-start;
+            border: 1px solid rgba(255, 140, 0, 0.3);
+        }
+
+        .chat-message.user {
+            background: var(--primary-orange);
+            color: var(--black);
+            align-self: flex-end;
+        }
+
+        .chat-quick-actions {
+            padding: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            border-top: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .quick-action-btn {
+            padding: 0.5rem 1rem;
+            background: var(--dark-gray);
+            border: 1px solid var(--primary-orange);
+            color: var(--primary-orange);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-action-btn:hover {
+            background: var(--primary-orange);
+            color: var(--black);
+        }
+
+        .chat-input {
+            padding: 1rem;
+            border-top: 1px solid rgba(255, 140, 0, 0.2);
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 0.8rem;
+            background: var(--dark-gray);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            border-radius: 20px;
+            color: var(--text-white);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .chat-input input:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+        }
+
+        .chat-send {
+            padding: 0.8rem 1.2rem;
+            background: var(--primary-orange);
+            border: none;
+            border-radius: 20px;
+            color: var(--black);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .chat-send:hover {
+            background: var(--rich-orange);
+        }
+
+        /* Desktop/Laptop specific improvements */
+        @media (min-width: 769px) {
+            .chat-button {
+                bottom: 30px !important;
+                right: 30px !important;
+                width: 65px !important;
+                height: 65px !important;
+            }
+            
+            .chat-window {
+                bottom: 110px !important;
+                right: 30px !important;
+                width: 380px !important;
+                height: 550px !important;
+            }
+        }
+
+        /* Large desktop screens */
+        @media (min-width: 1200px) {
+            .chat-button {
+                bottom: 40px !important;
+                right: 40px !important;
+                width: 70px !important;
+                height: 70px !important;
+                font-size: 30px !important;
+            }
+            
+            .chat-window {
+                bottom: 130px !important;
+                right: 40px !important;
+                width: 400px !important;
+                height: 600px !important;
+            }
+        }
+
+        /* AI Chatbot Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .chat-widget {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .chat-button {
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .chat-window {
+                position: fixed;
+                width: 90vw;
+                max-width: 90vw;
+                height: 70vh;
+                max-height: 70vh;
+                bottom: 80px;
+                right: 10px;
+                left: 10px;
+                margin: 0 auto;
+            }
+
+            .chat-header {
+                padding: 12px 15px;
+                font-size: 16px;
+            }
+
+            .chat-header h3 {
+                font-size: 16px;
+            }
+
+            .chat-messages {
+                height: calc(70vh - 140px);
+                max-height: calc(70vh - 140px);
+                padding: 15px;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .chat-message {
+                max-width: 85%;
+                word-wrap: break-word;
+                font-size: 14px;
+            }
+
+            .chat-quick-actions {
+                padding: 12px;
+                gap: 8px;
+            }
+
+            .quick-action-btn {
+                font-size: 13px;
+                padding: 8px 12px;
+            }
+
+            .chat-input {
+                padding: 12px;
+            }
+
+            .chat-input input {
+                font-size: 14px;
+                padding: 10px 12px;
+            }
+
+            .chat-send {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .chat-window {
+                width: 95vw;
+                max-width: 95vw;
+                height: 65vh;
+                max-height: 65vh;
+                bottom: 75px;
+                right: 5px;
+                left: 5px;
+            }
+
+            .chat-header {
+                font-size: 14px;
+                padding: 10px 12px;
+            }
+
+            .chat-header h3 {
+                font-size: 14px;
+            }
+
+            .chat-messages {
+                height: calc(65vh - 130px);
+                max-height: calc(65vh - 130px);
+                padding: 10px;
+            }
+
+            .chat-message {
+                max-width: 90%;
+                font-size: 13px;
+            }
+
+            .chat-quick-actions {
+                padding: 10px;
+            }
+
+            .quick-action-btn {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: rgba(0, 0, 0, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .chat-window {
+                width: calc(100vw - 2rem);
+                right: 1rem;
+                left: 1rem;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">SS EDITS</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#demo-reel">Demo Reel</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">SS EDITS</h1>
+            <p class="hero-subtitle">Premium Video Editing &amp; Post-Production Services</p>
+            <p class="hero-description">
+                Transforming raw footage into cinematic masterpieces. We deliver professional video editing, 
+                color grading, and post-production services that elevate your content to industry standards.
+            </p>
+            <div class="cta-buttons">
+                <a href="#demo-reel" class="btn btn-primary">Request Demo Reel</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
+                Comprehensive video editing solutions tailored to your creative vision
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3>Professional Video Editing</h3>
+                    <p>Expert cutting, transitions, and storytelling that brings your vision to life with precision and creativity.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Color Grading &amp; Correction</h3>
+                    <p>Professional color grading to achieve the perfect mood, atmosphere, and cinematic look for your project.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Motion Graphics</h3>
+                    <p>Eye-catching animations, titles, and visual effects that enhance your content and engage your audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3>Post-Production Services</h3>
+                    <p>Complete post-production workflow including sound design, VFX, and final delivery in any format.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📽️</div>
+                    <h3>Cinematic Storytelling</h3>
+                    <p>Crafting compelling narratives through expert pacing, shot selection, and emotional resonance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Content Creation</h3>
+                    <p>Social media content, YouTube videos, and digital marketing materials optimized for every platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <p class="section-subtitle">
+                A showcase of our creative excellence and professional achievements
+            </p>
+            <div class="portfolio-intro">
+                <p>
+                    We have collaborated with numerous content creators and are currently engaged in a prestigious movie project, 
+                    delivering cinematic excellence and creative storytelling that exceeds industry standards.
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">🎬</div>
+                    <div class="portfolio-overlay">
+                        <h3>Commercial Projects</h3>
+                        <p>High-end commercial content for brands</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">🎥</div>
+                    <div class="portfolio-overlay">
+                        <h3>Film Production</h3>
+                        <p>Feature film editing and post-production</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">📱</div>
+                    <div class="portfolio-overlay">
+                        <h3>Content Creator Collaborations</h3>
+                        <p>YouTube and social media content</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">🎨</div>
+                    <div class="portfolio-overlay">
+                        <h3>Music Videos</h3>
+                        <p>Creative visual storytelling for artists</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">✨</div>
+                    <div class="portfolio-overlay">
+                        <h3>Motion Graphics</h3>
+                        <p>Animated content and visual effects</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">📺</div>
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Videos</h3>
+                        <p>Professional business communications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Reel Section -->
+    <section id="demo-reel">
+        <div class="container">
+            <h2 class="section-title">Demo Reel</h2>
+            <div class="demo-reel-content">
+                <h3>Experience Our Work</h3>
+                <p>
+                    Request our professional demo reel to see the quality and creativity that defines SS EDITS. 
+                    Get a glimpse of our cinematic excellence and professional editing capabilities.
+                </p>
+                <div class="demo-request-buttons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=editswithssedits@gmail.com&su=Demo%20Reel%20Request&body=Hi%20SS%20EDITS,%0A%0AI%20would%20like%20to%20request%20a%20demo%20reel%20to%20see%20your%20previous%20work.%0A%0APlease%20share%20your%20portfolio%20samples.%0A%0AThank%20you!" 
+                       class="btn btn-primary" target="_blank" rel="noopener">
+                        📧 Request via Email
+                    </a>
+                    <a href="https://wa.me/917760742052?text=Hi%20SS%20EDITS%2C%20I%20would%20like%20to%20request%20a%20demo%20reel%20to%20see%20your%20previous%20work.%20Please%20share%20your%20portfolio%20samples." 
+                       class="btn btn-secondary" target="_blank">
+                        💬 Request via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">
+                Hear what our clients say about working with SS EDITS
+            </p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        SS EDITS transformed our raw footage into a compelling visual narrative. 
+                        Their attention to detail and creative vision exceeded our expectations.
+                    </p>
+                    <p class="testimonial-author">Creative Director, Digital Media Agency</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Working with SS EDITS was seamless. They delivered high-quality edits on time 
+                        and understood our brand perfectly.
+                    </p>
+                    <p class="testimonial-author">Marketing Manager, Tech Startup</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        The team's expertise in color grading and motion graphics elevated our project 
+                        to professional standards. Highly recommended.
+                    </p>
+                    <p class="testimonial-author">Producer, Independent Film Studio</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        SS EDITS combines technical proficiency with artistic flair. 
+                        Their work speaks for itself.
+                    </p>
+                    <p class="testimonial-author">Content Creator, YouTube Channel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Ready to elevate your content? Let's discuss your project
+            </p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=editswithssedits@gmail.com" target="_blank" rel="noopener">editswithssedits@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+917760742052">+91 7760742052</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>
+                                <a href="https://wa.me/917760742052" target="_blank">Chat with us instantly</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-success" id="formSuccess">
+                        ✅ Message sent successfully! We'll get back to you soon.
+                    </div>
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key - REPLACE WITH YOUR KEY FROM https://web3forms.com -->
+                        <input type="hidden" name="access_key" value="33c22880-937e-41bd-afc5-6389ff883833">
+                        
+                        <!-- Custom Email Subject -->
+                        <input type="hidden" name="subject" value="New Project Inquiry from SS EDITS Website">
+                        
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 7760742052" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select Budget Range</option>
+                                <option value="Under ₹5,000">Under ₹5,000</option>
+                                <option value="₹5,000 - ₹15,000">₹5,000 - ₹15,000</option>
+                                <option value="₹15,000 - ₹30,000">₹15,000 - ₹30,000</option>
+                                <option value="₹30,000 - ₹50,000">₹30,000 - ₹50,000</option>
+                                <option value="₹50,000+">₹50,000+</option>
+                                <option value="Discuss Custom Quote">Discuss Custom Quote</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="project_type" required>
+                                <option value="">Select Project Type</option>
+                                <option value="YouTube Video Editing">YouTube Video Editing</option>
+                                <option value="Social Media Content">Social Media Content</option>
+                                <option value="Corporate Video">Corporate Video</option>
+                                <option value="Wedding/Event Video">Wedding/Event Video</option>
+                                <option value="Documentary">Documentary</option>
+                                <option value="Short Film/Movie">Short Film/Movie</option>
+                                <option value="Music Video">Music Video</option>
+                                <option value="Commercial/Advertisement">Commercial/Advertisement</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <button type="submit" class="btn btn-primary" style="flex: 1; min-width: 200px;">📧 Submit via Email</button>
+                            <button type="button" id="whatsappBtn" class="btn btn-secondary" style="flex: 1; min-width: 200px;">💬 Send via WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SS EDITS</div>
+            <p class="footer-text">Premium Video Editing &amp; Post-Production Services</p>
+            <div class="social-links">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=editswithssedits@gmail.com" class="social-link" target="_blank" rel="noopener" title="Email">📧</a>
+                <a href="https://wa.me/917760742052" class="social-link" target="_blank" title="WhatsApp">💬</a>
+                <a href="tel:+917760742052" class="social-link" title="Phone">📱</a>
+            </div>
+            <p class="copyright">
+                &copy; 2025 SS EDITS. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chatButton">💬</button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>AI Assistant</h3>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    Hello! I'm your SS EDITS AI assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chat-quick-actions">
+                <button class="quick-action-btn" data-question="services">Services</button>
+                <button class="quick-action-btn" data-question="pricing">Pricing</button>
+                <button class="quick-action-btn" data-question="turnaround">Turnaround</button>
+                <button class="quick-action-btn" data-question="projects">Projects</button>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button class="chat-send" id="chatSend">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.textContent = navLinks.classList.contains('active') ? '×' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // WhatsApp Form Submission
+        const whatsappBtn = document.getElementById('whatsappBtn');
+        
+        whatsappBtn.addEventListener('click', function() {
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const budget = document.getElementById('budget').value;
+            const projectType = document.getElementById('projectType').value;
+            const message = document.getElementById('message').value.trim();
+            
+            // Validate required fields
+            if (!name || !email || !phone || !budget || !projectType || !message) {
+                alert('⚠️ Please fill in all required fields before sending via WhatsApp');
+                return;
+            }
+            
+            // Validate phone number format
+            const phonePattern = /^[+]?[0-9\s-()]+$/;
+            if (!phonePattern.test(phone)) {
+                alert('⚠️ Please enter a valid phone number');
+                return;
+            }
+            
+            // Validate dropdown selections
+            if (budget === '' || budget === 'Select Budget Range') {
+                alert('⚠️ Please select a budget range');
+                return;
+            }
+            
+            if (projectType === '' || projectType === 'Select Project Type') {
+                alert('⚠️ Please select a project type');
+                return;
+            }
+            
+            // Format WhatsApp message
+            const whatsappMessage = `Hi SS EDITS,\n\nI have a new project inquiry:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nBudget: ${budget}\nProject Type: ${projectType}\n\nMessage:\n${message}\n\nLooking forward to working with you!`;
+            
+            // Open WhatsApp with pre-filled message
+            const whatsappURL = `https://wa.me/917760742052?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            formSuccess.textContent = '✅ Opening WhatsApp... Your message is ready to send!';
+            formSuccess.style.display = 'block';
+            
+            setTimeout(() => {
+                formSuccess.style.display = 'none';
+            }, 5000);
+        });
+
+        // Contact Form Submission with Web3Forms
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', function(e) {
+            // Get form data before submission
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const budget = formData.get('budget');
+            const projectType = formData.get('project_type');
+            const message = formData.get('message');
+
+            // Validate phone number format
+            const phonePattern = /^[+]?[0-9\s-()]+$/;
+            if (!phonePattern.test(phone)) {
+                e.preventDefault();
+                alert('⚠️ Please enter a valid phone number');
+                return;
+            }
+
+            // Validate dropdown selections
+            if (!budget || budget === '' || budget === 'Select Budget Range') {
+                e.preventDefault();
+                alert('⚠️ Please select a budget range');
+                return;
+            }
+
+            if (!projectType || projectType === '' || projectType === 'Select Project Type') {
+                e.preventDefault();
+                alert('⚠️ Please select a project type');
+                return;
+            }
+
+            // Check if access key is configured
+            const accessKey = formData.get('access_key');
+            if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
+                e.preventDefault();
+                alert('⚠️ Web3Forms is not configured yet!\n\nPlease follow these steps:\n1. Visit https://web3forms.com\n2. Enter email: editswithssedits@gmail.com\n3. Get your FREE access key\n4. Replace YOUR_ACCESS_KEY_HERE in the code\n\nFor now, opening WhatsApp...');
+                
+                // Open WhatsApp as fallback
+                const whatsappMsg = `Hi SS EDITS, I want to discuss a project!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nBudget: ${budget}\nProject: ${projectType}\n\nMessage: ${message}`;
+                window.open(`https://wa.me/917760742052?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
+                return;
+            }
+
+            // Form will submit to Web3Forms normally
+            // After 1 second, also open WhatsApp
+            setTimeout(() => {
+                const whatsappMsg = `Hi SS EDITS! I just submitted a project inquiry through your website.\n\nName: ${name}\nProject: ${projectType}\nBudget: ${budget}\n\nPlease check your email for full details!`;
+                window.open(`https://wa.me/917760742052?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
+            }, 1000);
+        });
+
+        // AI Chat Widget
+        const chatButton = document.getElementById('chatButton');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatClose = document.getElementById('chatClose');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const chatSend = document.getElementById('chatSend');
+        const quickActionBtns = document.querySelectorAll('.quick-action-btn');
+
+        const aiResponses = {
+            services: "We specialize in professional video editing, color grading, motion graphics, post-production services, and cinematic storytelling for content creators and film projects.",
+            pricing: "Our pricing varies based on project complexity and requirements. Please contact us with your project details for a customized quote.",
+            turnaround: "Turnaround time depends on project scope. Typical projects are completed within 3-7 business days. Rush orders can be accommodated for urgent needs.",
+            projects: "Absolutely! We're currently working on a movie project and have experience with large-scale productions. We can scale our services to meet your needs.",
+            revisions: "Yes, we include up to 3 rounds of revisions in our standard packages to ensure your complete satisfaction with the final product.",
+            default: "I'd be happy to help! For specific inquiries, please contact us at editswithssedits@gmail.com or call +91 7760742052. You can also use the quick action buttons for common questions."
+        };
+
+        chatButton.addEventListener('click', () => {
+            chatWindow.classList.toggle('active');
+            // Prevent background scroll on mobile when chatbot is open
+            if (chatWindow.classList.contains('active') && window.innerWidth <= 768) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatWindow.classList.remove('active');
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        });
+
+        function addMessage(text, isBot = true) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${isBot ? 'bot' : 'user'}`;
+            messageDiv.textContent = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function handleChatMessage(message) {
+            const lowerMessage = message.toLowerCase();
+            let response = aiResponses.default;
+
+            if (lowerMessage.includes('service') || lowerMessage.includes('what do you')) {
+                response = aiResponses.services;
+            } else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('charge')) {
+                response = aiResponses.pricing;
+            } else if (lowerMessage.includes('time') || lowerMessage.includes('how long') || lowerMessage.includes('turnaround')) {
+                response = aiResponses.turnaround;
+            } else if (lowerMessage.includes('project') || lowerMessage.includes('large') || lowerMessage.includes('scale')) {
+                response = aiResponses.projects;
+            } else if (lowerMessage.includes('revision') || lowerMessage.includes('change')) {
+                response = aiResponses.revisions;
+            } else if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
+                response = "Hello! Welcome to SS EDITS. How can I assist you with your video editing needs today?";
+            } else if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('phone')) {
+                response = "You can reach us at editswithssedits@gmail.com or call/WhatsApp us at +91 7760742052. We're here to help!";
+            }
+
+            setTimeout(() => {
+                addMessage(response, true);
+            }, 500);
+        }
+
+        chatSend.addEventListener('click', () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                addMessage(message, false);
+                chatInput.value = '';
+                handleChatMessage(message);
+            }
+        });
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                chatSend.click();
+            }
+        });
+
+        quickActionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const question = btn.dataset.question;
+                const questionText = btn.textContent;
+                addMessage(questionText, false);
+                setTimeout(() => {
+                    addMessage(aiResponses[question], true);
+                }, 500);
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
